@@ -12,9 +12,7 @@ $("h1").click(function () {
     $("h1").css("color", "green");
 })
 
-$("button").click(function () {
-    $("h1").css("color", "pink");
-})
+
 
 $("input").keydown(function (event) {
     $("h1").text(event.key);
@@ -32,4 +30,24 @@ $("h1").prepend("<button>prepend</button>");
 
 $("h1").append("<button>append</button>");
 
-$("button").remove();
+// $("button").remove();
+
+// $("button").click(function () {
+//     $("h1").toggle();
+// })
+
+// $("button").click(function () {
+//     $("h1").fadeToggle();
+// })
+
+// $("button").click(function () {
+//     $("h1").slideToggle();
+// })
+
+// $("button").click(function () {
+//     $("h1").animate({opacity: 0.5});
+// })
+
+$("button").click(function () {
+    $("h1").slideUp().slideDown().animate({opacity: 0.5});
+})
